@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ilysm sysy</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: url('https://i.pinimg.com/originals/cc/74/77/cc74775e1db6abbefdc7e017af7aec90.gif') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        /* Conteneur */
+        .contenu {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Texte avec changement de couleur animé */
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: colorChange 5s infinite alternate;
+        }
+
+        /* Dégradé dynamique sur le texte */
+        .gradient-text {
+            background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #0099ff, #cc00ff);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientMove 4s infinite alternate;
+        }
+
+        /* Effet Glow */
+        p {
+            font-size: 1.2em;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Changement de couleur progressif */
+        @keyframes colorChange {
+            0% { color: #ff0000; }
+            25% { color: #ff9900; }
+            50% { color: #33cc33; }
+            75% { color: #0099ff; }
+            100% { color: #cc00ff; }
+        }
+
+        /* Déplacement du dégradé */
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Apparition en fondu */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenu">
+        <h1 class="gradient-text">Texte Coloré</h1>
+        <p>Regarde ce texte qui change de couleur et s'anime en douceur !</p>
+    </div>
+</body>
+</html>
